@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+    <title>Nina Carducci - Photographe</title>
+    <meta
+      name="description"
+      content="Nina Carducci, photographe professionnelle, vous propose ses services pour capturer vos moments les plus précieux et garder un souvenir impérissable. Elle se déplace en Île-de-France pour réaliser vos photos."
+    />
+    <meta
+      name="keywords"
+      content="Nina Carducci, photographe, professionnelle, Île-de-France, shooting photo, retouches, album photos, portrait, mariage, concert, entreprises"
+    />
+    <meta name="author" content="Nina Carducci" />
+    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <meta lang="fr" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,14 +23,6 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
   </head>
   <body>
     <header>
@@ -48,6 +52,8 @@
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
+          itemscope
+          itemtype="https://schema.org/ImageGallery"
         >
           <div class="carousel-indicators">
             <button
@@ -72,27 +78,74 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <figure
+              class="carousel-item active"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
               <img
-                src="./assets/images/slider/man-crossing-road-with-bag.jpg"
+                src="./assets/images/slider/man_back_black_suit_crossing_zebra_crosswalk_black_bag_in_hand-1000.webp"
+                srcset="
+                  ./assets/images/slider/man_back_black_suit_crossing_zebra_crosswalk_black_bag_in_hand-2048.webp 2048w,
+                  ./assets/images/slider/man_back_black_suit_crossing_zebra_crosswalk_black_bag_in_hand-1920.webp 1920w,
+                  ./assets/images/slider/man_back_black_suit_crossing_zebra_crosswalk_black_bag_in_hand-1530.webp 1530w,
+                  ./assets/images/slider/man_back_black_suit_crossing_zebra_crosswalk_black_bag_in_hand-1000.webp 1000w,
+                  ./assets/images/slider/man_back_black_suit_crossing_zebra_crosswalk_black_bag_in_hand-300.webp   300w
+                "
+                sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
                 class="d-block w-100"
-                alt="Image de dos d'un homme en costume noir qui traverse un passage piéton avec un sac noir à la main"
+                alt="Image de dos d'un homme en costume noir qui traverse un passage piéton à rayures zébrées avec un sac noir à la main"
+                itemprop="contentUrl"
               />
-            </div>
-            <div class="carousel-item">
+              <meta
+                itemprop="description"
+                content="Image de dos d'un homme en costume noir qui traverse un passage piéton à rayures zébrées avec un sac noir à la main"
+              />
+            </figure>
+            <figure
+              class="carousel-item"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
               <img
-                src="./assets/images/slider/happy-black-men-in-event.jpg"
+                src="./assets/images/slider/large_crowd_outdoor_event_cheering_two_men_tshirt_tank_top_blue_cap.webp"
+                srcset="
+                  ./assets/images/slider/large_crowd_outdoor_event_cheering_two_men_tshirt_tank_top_blue_cap-mobile.webp  570w,
+                  ./assets/images/slider/large_crowd_outdoor_event_cheering_two_men_tshirt_tank_top_blue_cap.webp        1000w
+                "
+                sizes="(max-width: 570px) 768px, 1000px"
                 class="d-block w-100"
-                alt="Image d'un homme noir débout, souriant, la main levée, autour d'autres personnes blanches, souriantes, la main levée lors d'un événement"
+                alt="Une grande foule de gens lors d'un événement en plein air, acclamant et levant les bras. L'attention est portée sur deux hommes au premier plan : l'un portant un t-shirt sombre, l'autre un débardeur blanc et une casquette bleue, tous deux souriant et participant activement à l'excitation."
+                loading="lazy"
+                itemprop="contentUrl"
               />
-            </div>
-            <div class="carousel-item">
+              <meta
+                itemprop="description"
+                content="Une grande foule de gens lors d'un événement en plein air, acclamant et levant les bras."
+              />
+            </figure>
+            <figure
+              class="carousel-item"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
               <img
-                src="./assets/images/slider/dansing-married-couple.jpg"
+                src="./assets/images/slider/newlyweds_romantic_kiss_sparklers_guests_celebration_festive_atmosphere.webp"
+                srcset="
+                  ./assets/images/slider/newlyweds_romantic_kiss_sparklers_guests_celebration_festive_atmosphere-mobile.webp  570w,
+                  ./assets/images/slider/newlyweds_romantic_kiss_sparklers_guests_celebration_festive_atmosphere.webp        1000w
+                "
+                sizes="(max-width: 570px) 768px, 1000px"
                 class="d-block w-100"
-                alt="Image d'un couple de mariés, la femme en robe blanche, le marié en costume kaki, dansant durant leur mariage"
+                alt="Un couple de jeunes mariés échange un baiser romantique pendant que le marié embrasse la mariée lors de la célébration de leur mariage. Les invités de chaque côté, habillés avec élégance, tiennent des cierges magiques et applaudissent, créant une atmosphère joyeuse et festive."
+                loading="lazy"
+                itemprop="contentUrl"
               />
-            </div>
+              <meta
+                itemprop="description"
+                content="Un couple de jeunes mariés échange un baiser romantique pendant la célébration de leur mariage."
+              />
+            </figure>
           </div>
           <button
             class="carousel-control-prev"
@@ -114,22 +167,26 @@
           </button>
         </div>
       </section>
-      <section id="about">
+      <section id="about" itemscope itemtype="https://schema.org/LocalBusiness">
         <div class="picture left">
           <img
-            src="./assets/images/nina.png"
-            alt="Photo de Nina Carducci, photographe professionnelle"
+            src="./assets/images/nina_carducci_young_woman_curly_hair_striped_shirt_denim_overalls_bamboo_tattoo.webp"
+            alt="Photo de Nina Carducci, photographe professionnelle, jeune femme aux cheveux bouclés qui se tient debout à l'extérieur, vêtue d'une chemise rayée et d'une salopette en jean. Elle a une main touchant son menton et l'autre posée sur son bras. L'arrière-plan présente une verdure floue avec de hautes tiges de bambou. Elle a un petit tatouage sur l'avant-bras."
+            itemprop="image"
           />
         </div>
         <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
-          <p class="about-me__introduction">
+          <h2 class="about-me__title">
+            Je suis
+            <span itemprop="name">Nina Carducci</span>
+          </h2>
+          <p class="about-me__introduction" itemprop="description">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait
             vibrer.
           </p>
-          <p>
+          <p itemprop="description">
             Nous passons notre vie à chercher le bonheur, et lorsque nous y
             touchons, nous n’avons qu’une envie : le figer au travers de
             photographies pour le savourer avec les personnes qui sont
@@ -140,145 +197,355 @@
             de la tendresse et de lumière à chaque fois que vous poserez les
             yeux sur vos photos.
           </p>
+          <!-- Ajouter les infos de contact et d'horaire -->
+          <!-- Le numero, l'adresse, les horaires uniquement -->
+          <p>
+            <strong>Tel :</strong>
+            <a href="tel:+3312345678">
+              <span itemprop="telephone">+33 06 12 34 56 78</span> </a
+            ><br />
+            <span
+              itemprop="address"
+              itemscope
+              itemtype="https://schema.org/PostalAddress"
+            >
+              <strong>Rue :</strong>
+              <span itemprop="streetAddress">12 rue des fleurs</span><br />
+              <strong>Code postal :</strong>
+              <span itemprop="postalCode">75000</span>
+              <span itemprop="addressLocality">Paris</span>
+              <span itemprop="addressCountry">France</span>
+            </span>
+            <br />
+            <strong>Horaires :</strong>
+            <span itemprop="openingHours">Lundi au Vendredi de 9h à 18h</span>
+          </p>
         </div>
       </section>
-      <section id="gallery">
+      <section
+        id="gallery"
+        itemscope
+        itemtype="https://schema.org/ImageGallery"
+      >
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
-            <img
+            <figure
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/crowd_concert_hands_raised_orange_stage_circular_structure.jpg"
-              alt="Foule lors d'un concert, mains levées et scène éclairée à l'orange. Une structure circulaire est visible au plafond, avec des motifs métalliques complexes."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/concerts/crowd_concert_hands_raised_orange_stage_circular_structure.webp"
+                srcset="
+                  ./assets/images/gallery/concerts/crowd_concert_hands_raised_orange_stage_circular_structure-mobile.webp  500w,
+                  ./assets/images/gallery/concerts/crowd_concert_hands_raised_orange_stage_circular_structure.webp        1000w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Foule lors d'un concert, mains levées et scène éclairée à l'orange. Une structure circulaire est visible au plafond, avec des motifs métalliques complexes."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Foule lors d'un concert, mains levées et scène éclairée à l'orange."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/man_dark_suit_crossed_arms_confident_blurred_urban_background.jpg"
-              alt="Un homme vêtu d'un costume sombre, d'une chemise blanche et d'une cravate rouge se tient debout, les bras croisés. Il a les cheveux courts et une expression confiante, et il se tient debout sur un fond urbain sombre et flou avec quelques structures floues et des branches sans feuilles."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/entreprise/man_dark_suit_crossed_arms_confident_blurred_urban_background.webp"
+                srcset="
+                  ./assets/images/gallery/entreprise/man_dark_suit_crossed_arms_confident_blurred_urban_background-mobile.webp  500w,
+                  ./assets/images/gallery/entreprise/man_dark_suit_crossed_arms_confident_blurred_urban_background.webp        1000w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Un homme vêtu d'un costume sombre, d'une chemise blanche et d'une cravate rouge se tient debout, les bras croisés. Il a les cheveux courts et une expression confiante, et il se tient debout sur un fond urbain sombre et flou avec quelques structures floues et des branches sans feuilles."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Un homme vêtu d'un costume sombre, bras croisés, fond urbain."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/two_women_bright_office_discussion_yellow_plaid_shirt_navy_dress.jpg"
-              alt="Deux femmes sont assises dans un bureau lumineux et discutent. La femme au premier plan a les cheveux en chignon et porte une chemise à carreaux jaune. La femme à l'arrière-plan sourit, a les cheveux longs et foncés et porte une robe bleu marine avec un col à pois blancs."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/entreprise/two_women_bright_office_discussion_yellow_plaid_shirt_navy_dress.webp"
+                srcset="
+                  ./assets/images/gallery/entreprise/two_women_bright_office_discussion_yellow_plaid_shirt_navy_dress-mobile.webp  500w,
+                  ./assets/images/gallery/entreprise/two_women_bright_office_discussion_yellow_plaid_shirt_navy_dress.webp        1500w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Deux femmes sont assises dans un bureau lumineux et discutent. La femme au premier plan a les cheveux en chignon et porte une chemise à carreaux jaune."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Deux femmes dans un bureau lumineux discutant."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/closeup_two_hands_reaching_ring_blurry_background_blue_sky_trees.jpg"
-              alt="Gros plan de deux paires de mains se tendant l'une vers l'autre sur un arrière-plan extérieur flou. La paire de droite porte une bague à la main, tandis que la paire de gauche n'a aucun bijou visible. Le ciel est bleu avec de légers nuages et on peut voir quelques arbres."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/mariage/closeup_two_hands_reaching_ring_blurry_background_blue_sky_trees.webp"
+                srcset="
+                  ./assets/images/gallery/mariage/closeup_two_hands_reaching_ring_blurry_background_blue_sky_trees-mobile.webp  500w,
+                  ./assets/images/gallery/mariage/closeup_two_hands_reaching_ring_blurry_background_blue_sky_trees.webp        1200w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Gros plan de deux paires de mains se tendant l'une vers l'autre sur un arrière-plan extérieur flou."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Deux paires de mains se tendant avec un arrière-plan flou."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/man_curly_black_hair_beard_eyes_closed_sunlight_black_tshirt.jpg"
-              alt="Un homme aux cheveux noirs bouclés et à la barbe plisse les yeux ou ferme les yeux fermement face à la lumière du soleil. Il porte un t-shirt noir et un collier, et l'arrière-plan est légèrement flou, suggérant un décor extérieur."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/portraits/man_curly_black_hair_beard_eyes_closed_sunlight_black_tshirt.webp"
+                srcset="
+                  ./assets/images/gallery/portraits/man_curly_black_hair_beard_eyes_closed_sunlight_black_tshirt-mobile.webp  500w,
+                  ./assets/images/gallery/portraits/man_curly_black_hair_beard_eyes_closed_sunlight_black_tshirt.webp        1000w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Un homme aux cheveux noirs bouclés et à la barbe ferme les yeux face à la lumière du soleil."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Homme aux cheveux noirs et bouclés, fermant les yeux face au soleil."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/happy_couple_wedding_dress_suit_bouquet_palm_tree_park.jpg"
-              alt="Un couple heureux, vêtu d'une robe de mariée et d'un costume, marche main dans la main à l'extérieur. La mariée tient un bouquet et porte un voile, tandis que le marié porte un costume sombre et sourit. Ils se trouvent dans un décor semblable à un parc avec un grand palmier en arrière-plan."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/mariage/happy_couple_wedding_dress_suit_bouquet_palm_tree_park.webp"
+                srcset="
+                  ./assets/images/gallery/mariage/happy_couple_wedding_dress_suit_bouquet_palm_tree_park-mobile.webp  500w,
+                  ./assets/images/gallery/mariage/happy_couple_wedding_dress_suit_bouquet_palm_tree_park.webp        1000w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Un couple heureux, vêtu d'une robe de mariée et d'un costume, marche main dans la main à l'extérieur."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Couple de jeunes mariés marchant main dans la main dans un parc."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/young_woman_medium_length_hair_glasses_black_ribbed_shirt_fence.jpg"
-              alt="Une jeune femme aux cheveux mi-longs et portant des lunettes se tient dehors, vêtue d'une chemise noire à manches longues côtelées. Elle est positionnée à côté d'une clôture grillagée, une main touchant ses cheveux et l'autre tenant la clôture. L'arrière-plan est flou et il semble faire soleil."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/portraits/young_woman_medium_length_hair_glasses_black_ribbed_shirt_fence.webp"
+                srcset="
+                  ./assets/images/gallery/portraits/young_woman_medium_length_hair_glasses_black_ribbed_shirt_fence-mobile.webp  500w,
+                  ./assets/images/gallery/portraits/young_woman_medium_length_hair_glasses_black_ribbed_shirt_fence.webp        1000w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Une jeune femme aux cheveux mi-longs et portant des lunettes se tient dehors, vêtue d'une chemise noire."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Jeune femme dehors, cheveux mi-longs, chemise noire."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/person_on_stage_microphone_raised_arm_colorful_lights_smoke.jpg"
-              alt="Personne sur scène tenant un micro, le bras levé au milieu de lumières colorées et d'effets de fumée."
-            />
-            <img
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/concerts/person_on_stage_microphone_raised_arm_colorful_lights_smoke.webp"
+                srcset="
+                  ./assets/images/gallery/concerts/person_on_stage_microphone_raised_arm_colorful_lights_smoke-mobile.webp  500w,
+                  ./assets/images/gallery/concerts/person_on_stage_microphone_raised_arm_colorful_lights_smoke.webp        1500w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Personne sur scène tenant un micro, le bras levé au milieu de lumières colorées et d'effets de fumée."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Personne sur scène avec un micro sous des lumières colorées."
+              />
+            </figure>
+
+            <figure
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/woman_laughing_polka_dot_blouse_desk_laptop_lady_justice_natural_light.jpg"
-              alt="Une femme aux cheveux longs et ondulés et portant un chemisier à pois rit joyeusement assise à un bureau avec un ordinateur portable. Une petite statue de Lady Justice et une tasse rose se trouvent également sur le bureau. Elle est baignée de lumière naturelle provenant d'une fenêtre voisine."
-            />
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <img
+                src="./assets/images/gallery/entreprise/woman_laughing_polka_dot_blouse_desk_laptop_lady_justice_natural_light.webp"
+                srcset="
+                  ./assets/images/gallery/entreprise/woman_laughing_polka_dot_blouse_desk_laptop_lady_justice_natural_light-mobile.webp  500w,
+                  ./assets/images/gallery/entreprise/woman_laughing_polka_dot_blouse_desk_laptop_lady_justice_natural_light.webp        1500w
+                "
+                sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"
+                alt="Une femme aux cheveux longs et ondulés et portant un chemisier à pois rit joyeusement assise à un bureau."
+                loading="lazy"
+                itemprop="contentUrl"
+              />
+              <meta
+                itemprop="caption"
+                content="Femme riant joyeusement à un bureau."
+              />
+            </figure>
           </div>
         </div>
         <div class="quote">
           <figure>
-            <blockquote class="quote__text">
+            <blockquote class="quote__text" itemprop="citation">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
             </blockquote>
-            <figcaption class="quote__author">- Richard Avedon</figcaption>
+            <figcaption class="quote__author" itemprop="creator">
+              - Richard Avedon
+            </figcaption>
           </figure>
         </div>
       </section>
-      <section id="services">
-        <h2 class="title">Mes services</h2>
+      <section id="services" itemscope itemtype="https://schema.org/Service">
+        <h2 class="title" itemprop="name">Mes services</h2>
         <div class="container">
-          <article class="service">
+          <article
+            class="service"
+            itemscope
+            itemtype="https://schema.org/Offer"
+          >
             <div class="service__description">
-              <h3>Shooting photo</h3>
-              <p>
+              <h3 itemprop="name">Shooting photo</h3>
+              <p itemprop="description">
                 Pour capturer vos moments les plus précieux et garder un
                 souvenir impérissable. Je me déplace en Île-de-France pour
-                réaliser vos photos
+                réaliser vos photos.
               </p>
             </div>
             <div class="service__price">
-              <h4>350€/demi journée</h4>
+              <h4 itemprop="price">350€/demi journée</h4>
               <span>Matériel, déplacement inclus</span>
             </div>
+            <meta itemprop="priceCurrency" content="EUR" />
           </article>
-          <article class="service">
+
+          <article
+            class="service"
+            itemscope
+            itemtype="https://schema.org/Offer"
+          >
             <div class="service__description">
-              <h3>Retouches</h3>
-              <p>
+              <h3 itemprop="name">Retouches</h3>
+              <p itemprop="description">
                 Vous souhaitez retoucher vos photos pour un résultat
                 professionnel ? Bénéficier d’un rendu optimal pour vos
-                publications
+                publications.
               </p>
             </div>
             <div class="service__price">
-              <h4>50€/photo</h4>
+              <h4 itemprop="price">50€/photo</h4>
               <span>2 AR par photo</span>
             </div>
+            <meta itemprop="priceCurrency" content="EUR" />
           </article>
-          <article class="service">
+
+          <article
+            class="service"
+            itemscope
+            itemtype="https://schema.org/Offer"
+          >
             <div class="service__description">
-              <h3>Album photos</h3>
-              <p>
+              <h3 itemprop="name">Album photos</h3>
+              <p itemprop="description">
                 Partagez avec vos proches et vos clients les photos des moments
-                partagés ensemble à travers un album photo personnalisé
+                partagés ensemble à travers un album photo personnalisé.
               </p>
             </div>
             <div class="service__price">
-              <h4>400€ album A4</h4>
+              <h4 itemprop="price">400€ album A4</h4>
               <span>30 pages recto/verso</span>
             </div>
+            <meta itemprop="priceCurrency" content="EUR" />
           </article>
         </div>
       </section>
-      <div class="quote">
+      <section
+        class="quote"
+        itemscope
+        itemtype="https://schema.org/CreativeWork"
+      >
         <figure>
-          <blockquote class="quote__text">
+          <blockquote class="quote__text" itemprop="text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
-            exactement de révéler une vie
+            exactement de révéler une vie.
           </blockquote>
-          <figcaption class="quote__author">- Richard Avedon</figcaption>
+          <figcaption class="quote__author" itemprop="author">
+            - Richard Avedon
+          </figcaption>
         </figure>
-      </div>
+      </section>
+
       <section id="contact">
         <div class="container">
           <div class="form-container">
-            <h2>Une question ? Une demande de devis ?</h2>
+            <h2 itemprop="headline">Une question ? Une demande de devis ?</h2>
             <p>
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
-              heures
+              heures.
             </p>
-            <form action="" method="post">
+            <form
+              action=""
+              method="post"
+              itemscope
+              itemtype="https://schema.org/ContactForm"
+            >
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" />
               <label for="email">Email</label>
@@ -289,18 +556,29 @@
                 id="message"
                 cols="30"
                 rows="10"
+                itemprop="message"
               ></textarea>
               <input type="submit" value="Envoyer" />
             </form>
           </div>
           <div class="picture right">
             <img
-              src="./assets/images/camera.png"
+              src="./assets/images/closeup_vintage_leica_camera_summicron_warm_orange_light_dark_background.webp"
               alt="Gros plan d'un appareil photo de style vintage avec un boîtier en cuir et un objectif détaillé. L'appareil photo est faiblement éclairé, projetant une lueur chaude et ambrée sur l'objectif et les zones environnantes. L'accent est mis sur l'objectif et les détails complexes de la face avant de l'appareil photo."
+              loading="lazy"
             />
           </div>
         </div>
       </section>
     </main>
+
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </body>
 </html>
